@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/ZLPhotoBrowser/ZLPhotoBrowser.framework

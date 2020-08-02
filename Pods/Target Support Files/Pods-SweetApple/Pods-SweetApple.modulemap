@@ -1,0 +1,6 @@
+framework module Pods_SweetApple {
+  umbrella header "Pods-SweetApple-umbrella.h"
+
+  export *
+  module * { export * }
+}

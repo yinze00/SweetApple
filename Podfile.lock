@@ -1,0 +1,26 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - ZLPhotoBrowser (3.2.0):
+    - SDWebImage
+
+DEPENDENCIES:
+  - Masonry
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  ZLPhotoBrowser: 3748fdbeb2b28961c2495d15131dbf413082e1b9
+
+PODFILE CHECKSUM: 11c3d0637624c40d2f2ade1b1c9ba290dee3d868
+
+COCOAPODS: 1.9.3

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5065EA0B099236D328A8D2 /* Pods_SweetApple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38AC0C3ACCA306D4E9760C31 /* Pods_SweetApple.framework */; };
+		5CB81812D2A0BF880DA1BB44 /* Pods_SweetAppleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF26520BAF77656BB9A895FA /* Pods_SweetAppleTests.framework */; };
 		E1322F5824D565C30003FDF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F5724D565C30003FDF1 /* AppDelegate.m */; };
 		E1322F5B24D565C30003FDF1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F5A24D565C30003FDF1 /* SceneDelegate.m */; };
 		E1322F5E24D565C30003FDF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F5D24D565C30003FDF1 /* ViewController.m */; };
@@ -16,6 +18,7 @@
 		E1322F6924D565C40003FDF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F6824D565C40003FDF1 /* main.m */; };
 		E1322F7324D565C40003FDF1 /* SweetAppleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F7224D565C40003FDF1 /* SweetAppleTests.m */; };
 		E1322F7E24D565C40003FDF1 /* SweetAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F7D24D565C40003FDF1 /* SweetAppleUITests.m */; };
+		F1BC5B7D42E9BF2A26C9E152 /* Pods_SweetApple_SweetAppleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE3E3D1E763E99BD1F764 /* Pods_SweetApple_SweetAppleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02DBB5EAEFF72E2ED531BCA3 /* Pods-SweetApple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetApple.release.xcconfig"; path = "Target Support Files/Pods-SweetApple/Pods-SweetApple.release.xcconfig"; sourceTree = "<group>"; };
+		38AC0C3ACCA306D4E9760C31 /* Pods_SweetApple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetApple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776AE3E3D1E763E99BD1F764 /* Pods_SweetApple_SweetAppleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetApple_SweetAppleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D8FC1DEC737C1DFE329890 /* Pods-SweetApple-SweetAppleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetApple-SweetAppleUITests.release.xcconfig"; path = "Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83F4A04B5BBCF9824372D3E0 /* Pods-SweetApple-SweetAppleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetApple-SweetAppleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		985562AF66CF505779036E1E /* Pods-SweetAppleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetAppleTests.release.xcconfig"; path = "Target Support Files/Pods-SweetAppleTests/Pods-SweetAppleTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB133B9E2B8661591C1E6108 /* Pods-SweetApple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetApple.debug.xcconfig"; path = "Target Support Files/Pods-SweetApple/Pods-SweetApple.debug.xcconfig"; sourceTree = "<group>"; };
+		C63F6AE228D320831A0B9A72 /* Pods-SweetAppleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetAppleTests.debug.xcconfig"; path = "Target Support Files/Pods-SweetAppleTests/Pods-SweetAppleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF26520BAF77656BB9A895FA /* Pods_SweetAppleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetAppleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1322F5324D565C30003FDF1 /* SweetApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1322F5624D565C30003FDF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1322F5724D565C30003FDF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5065EA0B099236D328A8D2 /* Pods_SweetApple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB81812D2A0BF880DA1BB44 /* Pods_SweetAppleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BC5B7D42E9BF2A26C9E152 /* Pods_SweetApple_SweetAppleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759DAFCFAD5D3788A65DAA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38AC0C3ACCA306D4E9760C31 /* Pods_SweetApple.framework */,
+				776AE3E3D1E763E99BD1F764 /* Pods_SweetApple_SweetAppleUITests.framework */,
+				DF26520BAF77656BB9A895FA /* Pods_SweetAppleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59DF0AA808BC18A2906DA26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB133B9E2B8661591C1E6108 /* Pods-SweetApple.debug.xcconfig */,
+				02DBB5EAEFF72E2ED531BCA3 /* Pods-SweetApple.release.xcconfig */,
+				83F4A04B5BBCF9824372D3E0 /* Pods-SweetApple-SweetAppleUITests.debug.xcconfig */,
+				80D8FC1DEC737C1DFE329890 /* Pods-SweetApple-SweetAppleUITests.release.xcconfig */,
+				C63F6AE228D320831A0B9A72 /* Pods-SweetAppleTests.debug.xcconfig */,
+				985562AF66CF505779036E1E /* Pods-SweetAppleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1322F4A24D565C30003FDF1 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				E1322F7124D565C40003FDF1 /* SweetAppleTests */,
 				E1322F7C24D565C40003FDF1 /* SweetAppleUITests */,
 				E1322F5424D565C30003FDF1 /* Products */,
+				C59DF0AA808BC18A2906DA26 /* Pods */,
+				759DAFCFAD5D3788A65DAA35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1322F8224D565C40003FDF1 /* Build configuration list for PBXNativeTarget "SweetApple" */;
 			buildPhases = (
+				B1F514F384BF20B72866E558 /* [CP] Check Pods Manifest.lock */,
 				E1322F4F24D565C30003FDF1 /* Sources */,
 				E1322F5024D565C30003FDF1 /* Frameworks */,
 				E1322F5124D565C30003FDF1 /* Resources */,
+				F0DAE48B9B1659ACFD1846A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1322F8524D565C40003FDF1 /* Build configuration list for PBXNativeTarget "SweetAppleTests" */;
 			buildPhases = (
+				AB9CBC3ECF1FCB821A2085E3 /* [CP] Check Pods Manifest.lock */,
 				E1322F6A24D565C40003FDF1 /* Sources */,
 				E1322F6B24D565C40003FDF1 /* Frameworks */,
 				E1322F6C24D565C40003FDF1 /* Resources */,
@@ -179,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1322F8824D565C40003FDF1 /* Build configuration list for PBXNativeTarget "SweetAppleUITests" */;
 			buildPhases = (
+				9E33A42702ED1273E5029975 /* [CP] Check Pods Manifest.lock */,
 				E1322F7524D565C40003FDF1 /* Sources */,
 				E1322F7624D565C40003FDF1 /* Frameworks */,
 				E1322F7724D565C40003FDF1 /* Resources */,
+				2F5180EED3C398FFEA9C3454 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +307,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F5180EED3C398FFEA9C3454 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetApple-SweetAppleUITests/Pods-SweetApple-SweetAppleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E33A42702ED1273E5029975 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetApple-SweetAppleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9CBC3ECF1FCB821A2085E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetAppleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F514F384BF20B72866E558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetApple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DAE48B9B1659ACFD1846A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetApple/Pods-SweetApple-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetApple/Pods-SweetApple-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetApple/Pods-SweetApple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1322F4F24D565C30003FDF1 /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		E1322F8324D565C40003FDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB133B9E2B8661591C1E6108 /* Pods-SweetApple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,7 +596,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = origin.SweetApple;
+				PRODUCT_BUNDLE_IDENTIFIER = origin.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +604,7 @@
 		};
 		E1322F8424D565C40003FDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DBB5EAEFF72E2ED531BCA3 /* Pods-SweetApple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = origin.SweetApple;
+				PRODUCT_BUNDLE_IDENTIFIER = origin.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +622,7 @@
 		};
 		E1322F8624D565C40003FDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63F6AE228D320831A0B9A72 /* Pods-SweetAppleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +643,7 @@
 		};
 		E1322F8724D565C40003FDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985562AF66CF505779036E1E /* Pods-SweetAppleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +664,7 @@
 		};
 		E1322F8924D565C40003FDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F4A04B5BBCF9824372D3E0 /* Pods-SweetApple-SweetAppleUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FLTUY3H47;
@@ -529,6 +683,7 @@
 		};
 		E1322F8A24D565C40003FDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D8FC1DEC737C1DFE329890 /* Pods-SweetApple-SweetAppleUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FLTUY3H47;
