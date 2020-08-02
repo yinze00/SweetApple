@@ -10,6 +10,10 @@
 #import "PictureViewController.h"
 #import "Masonry.h"
 #import <ZLPhotoBrowser/ZLPhotoBrowser.h>
+#import "UserInfo.h"
+//#import
+//#import "N"
+//#import “NSURLSession"
 
 @interface ViewController ()
 @property(nonatomic,strong) UIButton* PicBtn;
@@ -18,7 +22,10 @@
 @property(nonatomic,strong) UIButton* uploadbtn;
 @property(nonatomic,strong) UIButton* repicbtn;
 @property(nonatomic,strong) UIImageView* APPShow;
+@property(nonatomic,assign) Boolean* rec;
+@property(nonatomic,assign) Boolean* a;
 
+@property(nonatomic,strong) UserInfo* curruser;
 @end
 
 @implementation ViewController
@@ -27,18 +34,69 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"主页面";
+    self.rec = false;
     [self MakeUI];
 
     
 }
 
+- (void) additemvc:(PictureViewController *)c didFinishenteringitem:(nonnull UserInfo *)item{
+//    self.curruser = item.copy;
+    self.curruser = [[UserInfo alloc]init];
+    self.curruser.username = item.username;
+    NSString *sdfa = [[NSString alloc]initWithString:self.curruser.username];
+    NSLog(sdfa,nil);
+    NSLog(@"success");
+}
 
 - (void) uploadbtnclicked{
     NSLog(@"upload");
     // 此时开始将self.img 上传到服务器www.wangjunwei.top
-    
+    if(!self.rec){
+//        UIAlertView *notlogin = [[UIAlertAction alloc]init];
+        // 方式1 无代理，只有一个确定按钮（左右排列，取消按钮在左，确定按钮在右）
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:
+        @"当前未登录" message:@"即将引导您登录/注册"
+        preferredStyle:UIAlertControllerStyleAlert];
+
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
+                                                               style:UIAlertActionStyleCancel
+                                                             handler:^(UIAlertAction * _Nonnull action){
+        }];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * _Nonnull action)
+                                                         {
+//            NSLog(@"SDdfasd")
+            PictureViewController *picview = [[PictureViewController alloc]init];
+            picview.delegate = self;
+            [self showDetailViewController:picview sender:self];
+            
+                                                         }
+                                   ];
+
+        [alertController addAction:cancelAction];
+        [alertController addAction:okAction];
+        
+        
+//        NSLog(alertController.actions[0].title,nil);
+//        if(alertController)
+//        if(true){
+////            [self.navigationController pushViewController:alertController animated:true];
+//            [self presentViewController:alertController animated:YES completion:nil];
+//
+//        }
+        [self presentViewController:alertController animated:YES completion:nil];
+//        [self.navigationController pushViewController:alertController animated:true];
+//        [alertController]
+//        NSLog(self.curruser.username,nil);
+
+    }
+//    NSLog(self.curruser.username,nil);
+
     
 }
+
 
 - (void) PicbtnClicked{
 //    PictureViewController* vpic = [[PictureViewController alloc]init];
@@ -164,3 +222,4 @@
 }
 
 @end
+// 我们在

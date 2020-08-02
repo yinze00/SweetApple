@@ -20,6 +20,7 @@
 		E1322F7E24D565C40003FDF1 /* SweetAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F7D24D565C40003FDF1 /* SweetAppleUITests.m */; };
 		E1EEC3ED24D69B9100155A0D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC3EB24D69B9100155A0D /* PictureViewController.m */; };
 		E1EEC3EE24D69B9100155A0D /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EEC3EC24D69B9100155A0D /* PictureViewController.xib */; };
+		E1EEC43B24D6EEDB00155A0D /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC43A24D6EEDB00155A0D /* UserInfo.m */; };
 		F1BC5B7D42E9BF2A26C9E152 /* Pods_SweetApple_SweetAppleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE3E3D1E763E99BD1F764 /* Pods_SweetApple_SweetAppleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		E1EEC3EA24D69B9100155A0D /* PictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
 		E1EEC3EB24D69B9100155A0D /* PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		E1EEC3EC24D69B9100155A0D /* PictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
+		E1EEC43924D6EEDB00155A0D /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		E1EEC43A24D6EEDB00155A0D /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				E1322F6424D565C40003FDF1 /* LaunchScreen.storyboard */,
 				E1322F6724D565C40003FDF1 /* Info.plist */,
 				E1322F6824D565C40003FDF1 /* main.m */,
+				E1EEC43924D6EEDB00155A0D /* UserInfo.h */,
+				E1EEC43A24D6EEDB00155A0D /* UserInfo.m */,
 			);
 			path = SweetApple;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 				E1EEC3ED24D69B9100155A0D /* PictureViewController.m in Sources */,
 				E1322F5824D565C30003FDF1 /* AppDelegate.m in Sources */,
 				E1322F6924D565C40003FDF1 /* main.m in Sources */,
+				E1EEC43B24D6EEDB00155A0D /* UserInfo.m in Sources */,
 				E1322F5B24D565C30003FDF1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,8 +11,11 @@
 #import "Masonry.h"
 
 @interface PictureViewController ()
-@property(nonatomic,strong) ZLPhotoActionSheet * ZLpic;
-@property(nonatomic,strong) UIImageView* show;
+@property (strong, nonatomic) IBOutlet UITextField *account;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UIView *loginbtn;
+@property (strong, nonatomic) IBOutlet UIButton *forgetpwbtn;
+@property (strong, nonatomic) IBOutlet UIButton *registerbtn;
 @property(nonatomic,strong) UIButton* picbtn;
 @end
 
@@ -25,64 +28,32 @@
     self.title = @"主d面";
     [self makeui];
     
+    self.password.secureTextEntry = true;
+    
+}
+- (IBAction)loginbtnclicked:(id)sender {
+    NSString * accountstr = self.account.text;
+    NSString * passwdstr  = self.password.text;
+    
+    NSLog(accountstr);
+    //
+    UserInfo* currlogin = [[UserInfo alloc]init];
+    [self.delegate additemvc:self didFinishenteringitem:currlogin];
+//    [self]
+}
+
+- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent *)event{
+
+    [self.view endEditing:YES]; //实现该方法是需要注意view需要是继承UIControl而来的
+
 }
 
 - (void)makeui{
-    [self.view addSubview:self.picbtn];
-    [self.picbtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self.view);
-        make.bottom.mas_equalTo(self.view).offset(-40);
-    }];
-    [self.view addSubview:self.show];
-    [self.show mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self.view);
-        make.top.mas_equalTo(self.view).mas_offset(20);
-    }];
+    
 }
 
-- (ZLPhotoActionSheet*)ZLpic{
-    if(_ZLpic){
-        _ZLpic = [[ZLPhotoActionSheet alloc]init];
-        _ZLpic.configuration.maxSelectCount = 5;
-        _ZLpic.configuration.maxPreviewCount = 20;
-        _ZLpic.sender = self;
-    }
-    return _ZLpic;
-}
-
--(UIButton*)picbtn{
-    if(!_picbtn){
-        _picbtn = [[UIButton alloc ]init];
-//        _picbtn.titleLabel = [[UILabel alloc]init];
-        [_picbtn setBackgroundColor:[UIColor blueColor]];
-        [_picbtn setTitle:@"拍照" forState:UIControlStateNormal];
-        [_picbtn addTarget:self action:@selector(picbtnclicked) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _picbtn;
-}
-
--(UIImageView*)show{
-    if(!_show){
-        _show = [[UIImageView alloc]init];
-    }
-    return _show;
-}
-
--(void)picbtnclicked{
-    [self.ZLpic showPreviewAnimated:YES];
-    // 直接调用相机
-    ZLCustomCamera *camera = [[ZLCustomCamera alloc] init];
 
 
-    camera.doneBlock = ^(UIImage *image, NSURL *videoUrl) {
-        // 自己需要在这个地方进行图片或者视频的保存
-        NSLog(@"dsasdfasdfasdfa");
-        [self.show setImage:image];
-    };
-
-    [self showDetailViewController:camera sender:nil];
-
-}
 
 
 
