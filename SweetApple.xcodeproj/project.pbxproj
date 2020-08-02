@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		E1322F6924D565C40003FDF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F6824D565C40003FDF1 /* main.m */; };
 		E1322F7324D565C40003FDF1 /* SweetAppleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F7224D565C40003FDF1 /* SweetAppleTests.m */; };
 		E1322F7E24D565C40003FDF1 /* SweetAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1322F7D24D565C40003FDF1 /* SweetAppleUITests.m */; };
+		E1EEC3ED24D69B9100155A0D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC3EB24D69B9100155A0D /* PictureViewController.m */; };
+		E1EEC3EE24D69B9100155A0D /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EEC3EC24D69B9100155A0D /* PictureViewController.xib */; };
 		F1BC5B7D42E9BF2A26C9E152 /* Pods_SweetApple_SweetAppleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE3E3D1E763E99BD1F764 /* Pods_SweetApple_SweetAppleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		E1322F7924D565C40003FDF1 /* SweetAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1322F7D24D565C40003FDF1 /* SweetAppleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SweetAppleUITests.m; sourceTree = "<group>"; };
 		E1322F7F24D565C40003FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EEC3EA24D69B9100155A0D /* PictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		E1EEC3EB24D69B9100155A0D /* PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		E1EEC3EC24D69B9100155A0D /* PictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +121,6 @@
 				C63F6AE228D320831A0B9A72 /* Pods-SweetAppleTests.debug.xcconfig */,
 				985562AF66CF505779036E1E /* Pods-SweetAppleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +149,9 @@
 		E1322F5524D565C30003FDF1 /* SweetApple */ = {
 			isa = PBXGroup;
 			children = (
+				E1EEC3EA24D69B9100155A0D /* PictureViewController.h */,
+				E1EEC3EB24D69B9100155A0D /* PictureViewController.m */,
+				E1EEC3EC24D69B9100155A0D /* PictureViewController.xib */,
 				E1322F5624D565C30003FDF1 /* AppDelegate.h */,
 				E1322F5724D565C30003FDF1 /* AppDelegate.m */,
 				E1322F5924D565C30003FDF1 /* SceneDelegate.h */,
@@ -287,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1322F6624D565C40003FDF1 /* LaunchScreen.storyboard in Resources */,
+				E1EEC3EE24D69B9100155A0D /* PictureViewController.xib in Resources */,
 				E1322F6324D565C40003FDF1 /* Assets.xcassets in Resources */,
 				E1322F6124D565C30003FDF1 /* Main.storyboard in Resources */,
 			);
@@ -417,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1322F5E24D565C30003FDF1 /* ViewController.m in Sources */,
+				E1EEC3ED24D69B9100155A0D /* PictureViewController.m in Sources */,
 				E1322F5824D565C30003FDF1 /* AppDelegate.m in Sources */,
 				E1322F6924D565C40003FDF1 /* main.m in Sources */,
 				E1322F5B24D565C30003FDF1 /* SceneDelegate.m in Sources */,
