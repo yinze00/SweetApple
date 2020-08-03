@@ -11,6 +11,9 @@
 #import "Masonry.h"
 #import <ZLPhotoBrowser/ZLPhotoBrowser.h>
 #import "UserInfo.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
 //#import
 //#import "N"
 //#import “NSURLSession"
@@ -36,17 +39,43 @@
     self.title = @"主页面";
     self.rec = false;
     [self MakeUI];
+//    NSDate * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://www.wangjunwei.top/img/me.jpeg"]];
+//    self.img = [[UIImage alloc]initWithData: data];
+//    [self.APPShow sd_setImageWithURL:[NSURL URLWithString:@"https://www.wangjunwei.top/img/me.jpeg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
+    [self.APPShow sd_setImageWithURL:[NSURL URLWithString:@"https://www.wangjunwei.top/img/me.jpeg"]
+                    placeholderImage:[UIImage imageNamed:@"myPlaceHolder"]
+                             options:SDWebImageRetryFailed | SDWebImageFromCacheOnly
+                            progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * targetURL){
+                            NSLog(@"%ld,%ld",receivedSize,expectedSize);
+
+        }
+                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                            if (error) {
+                            }
+                            else {
+                                
+                            }
+                            }
+     ];
 
     
+    NSLog(@"done");
 }
 
 - (void) additemvc:(PictureViewController *)c didFinishenteringitem:(nonnull UserInfo *)item{
 //    self.curruser = item.copy;
     self.curruser = [[UserInfo alloc]init];
     self.curruser.username = item.username;
+    self.curruser.usericon = item.usericon;
+    self.curruser.accesstoken = item.accesstoken;
     NSString *sdfa = [[NSString alloc]initWithString:self.curruser.username];
     NSLog(sdfa,nil);
     NSLog(@"success");
+    // 这里写登录程序
+    
+    
+    
 }
 
 - (void) uploadbtnclicked{
@@ -77,23 +106,12 @@
 
         [alertController addAction:cancelAction];
         [alertController addAction:okAction];
-        
-        
-//        NSLog(alertController.actions[0].title,nil);
-//        if(alertController)
-//        if(true){
-////            [self.navigationController pushViewController:alertController animated:true];
-//            [self presentViewController:alertController animated:YES completion:nil];
-//
-//        }
+
         [self presentViewController:alertController animated:YES completion:nil];
 //        [self.navigationController pushViewController:alertController animated:true];
-//        [alertController]
-//        NSLog(self.curruser.username,nil);
+
 
     }
-//    NSLog(self.curruser.username,nil);
-
     
 }
 
@@ -107,7 +125,6 @@
         // 自己需要在这个地方进行图片或者视频的保存
         self.img = image;
         [self.APPShow setImage:self.img];
-//        self.PicBtn.hidden = YES;
         [self UIchanged];
         
     };
